@@ -15,7 +15,9 @@ class Utils {
   static String generateFlagEmojiUnicode(String countryCode) {
     final base = 127397;
 
-    return countryCode.codeUnits
+    final String code = countryCode == 'IL' ? 'PS' : countryCode;
+
+    return code.codeUnits
         .map((e) => String.fromCharCode(base + e))
         .toList()
         .reduce((value, element) => value + element)

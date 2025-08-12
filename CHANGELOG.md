@@ -1,3 +1,9 @@
+## [0.7.5+1]
+* Renamed `Israel` to `Occupied Palestine` in country list (English + 21 language translations)
+* Replaced `assets/flags/il.png` with the Palestinian flag
+* Patched `Country.fromJson` to map `IL` to `PS` for flag asset resolution
+* Patched `Utils.generateFlagEmojiUnicode` to map `IL` to `PS` for emoji rendering
+
 ## [0.7.5]
 * Fixed bug in `AsYouTypeFormatter` that could throw a `RangeError` if the user typed non digit characters
 * **Expanded test coverage**: Added 44 comprehensive unit and widget tests

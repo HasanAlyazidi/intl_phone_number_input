@@ -30,12 +30,15 @@ class Country {
 
   /// Convert [Countries.countryList] to [Country] model
   factory Country.fromJson(Map<String, dynamic> data) {
+    final String flagImage =
+        data['alpha_2_code'] == 'IL' ? 'PS' : data['alpha_2_code'];
+
     return Country(
       name: data['en_short_name'],
       alpha2Code: data['alpha_2_code'],
       alpha3Code: data['alpha_3_code'],
       dialCode: data['dial_code'],
-      flagUri: 'assets/flags/${data['alpha_2_code'].toLowerCase()}.png',
+      flagUri: 'assets/flags/${flagImage.toLowerCase()}.png',
       nameTranslations: data['nameTranslations'] != null
           ? Map<String, String>.from(data['nameTranslations'])
           : null,
