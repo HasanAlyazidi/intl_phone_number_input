@@ -1,3 +1,6 @@
+## [0.7.5+2]
+* Bumped `dlibphonenumber` to `^1.1.62`
+
 ## [0.7.5+1]
 * Renamed `Israel` to `Occupied Palestine` in country list (English + 21 language translations)
 * Replaced `assets/flags/il.png` with the Palestinian flag
