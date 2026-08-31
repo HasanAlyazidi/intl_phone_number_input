@@ -1,3 +1,6 @@
+## [0.8.0]
+* **Breaking:** Migrated to `package:material_ui` (requires Flutter 3.44+ / Dart 3.12+); apps still on `package:flutter/material.dart` must wrap the widgets in `MaterialUiCompatibilityBridge`
+
 ## [0.7.5+2]
 * Bumped `dlibphonenumber` to `^1.1.62`
 
